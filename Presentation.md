@@ -1,0 +1,44 @@
+Probability Density Function (PDF)
+========================================================
+author: Marcin Mironczuk
+date: 02-02-2021
+autosize: true
+
+Introduction
+========================================================
+
+The *dnorm* is a R function that allows to plot Probability Density Function (PDF). 
+The function has the following parameters:
+- x
+- mean
+- sd
+- log (TRUE/FALSE)
+
+Function call
+========================================================
+
+To call a function we use the following expression
+
+
+```r
+set.seed(3000)
+xseq <- seq(-10, 10, .01)
+    
+densities <- dnorm(xseq, mean = 0, sd = 1, log = FALSE)
+```
+
+Plot of the result
+========================================================
+
+To plot a results we use the following expression
+
+
+```r
+plot(xseq, densities, col = "red", xlab = "", ylab = "Density", type = "l", lwd = 2, cex = 2, main = "PDF of Standard Normal", cex.axis = .8)
+```
+
+<img src="Presentation-figure/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
+
+
+========================================================
+Thank you for your attention!
